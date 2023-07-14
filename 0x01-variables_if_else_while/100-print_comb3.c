@@ -8,7 +8,7 @@
 int main(void)
 {
 int digit1, digit2;
-i
+
 for (digit1 = 0; digit1 < 10; digit1++)
 {
 for (digit2 = 0; digit2 < 10; digit2++)
