@@ -5,14 +5,15 @@
  * @a: pointer to first value
  * @b: pointer to second value
  */
-void swap_int(int *a, int *b);
+
+void swap_int(int *a, int *b)
 {
 
-	int d;
+int c;
 
-	d = *a;
-	*a = *b;
-	*b = *c;
-	*c = d;
+c = *a;
+*a = *b;
+*b = c;
 
 }
+
