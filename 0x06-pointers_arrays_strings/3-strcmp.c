@@ -7,16 +7,16 @@
  * Return: less than 0 if str1 is less than str2, 0 if they're equal,
  * more than 0 if str1 is greater than str2
  */
-int _strcmp(char *str1, char *str2)
+int _strcmp(char *s1, char *s2)
 {
-	while (*str1 == *str2)
+	while (*s1 == *s2)
 	{
-		if (*str1 == '\0')
+		if (*s1 == '\0')
 		{
 			return (0);
 		}
-		str1++;
-		str2++;
+		s1++;
+		s2++;
 	}
-	return (*str1 - *str2);
+	return (*s1 - *s2);
 }
