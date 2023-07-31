@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * _strpbrk - Entry point
  * @s: input for  function locates the first occurrence in the string
- * @accept: input of any of the bytes in the string 
+ * @accept: input of the bytes in the string
  * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
