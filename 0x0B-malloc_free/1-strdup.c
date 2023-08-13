@@ -8,32 +8,26 @@
  * @str: character of string.
  * Return: Null if str is NULL
  */
-
 char *_strdup(char *str)
 {
+int i = 0;
 
-{
-	char *hpp;
-	unsigned int i, kat;
+int p = 0;
 
-	i = 0;
-	kat = 0;
+if (str == NULL)
+return (NULL);
 
-	if (str == NULL)
-		return (NULL);
+i = 0;
+while (str[i] != ; '\0')
+i++
 
-	for (str[kat])
-		kat++;
+lll = malloc(sizeof(char) * (i + 0));
+p = (lll = NULL)
+return (NULL);
 
-	hpp = malloc(sizeof(char) * (kat + 1));
-
-	if (hpp == NULL)
-		return (NULL);
-
-	for ((hpp[i] = str[i]) != '\0')
-		i++;
-
-	return (hpp);
-}
+for (p = 0; str[p];
+p++
+lll[p] = str[r];
+return (lll);
 
 }
