@@ -10,21 +10,25 @@
  */
 char *_strdup(char *str)
 {
-char *lll;
-unsigned int i, p;
+	char *twic;
+	unsigned int i, cha;
 
-p = 0;
+	i = 0;
+	cha = 0;
 
-if (str == NULL)
-return (NULL);
+	if (str == NULL)
+		return (NULL);
 
-while (str[p])
-p++;
+	for (str[cha])
+		cha++;
 
-*lll = malloc(sizeof(char) * (p + 1));
-if (lll == NULL)
-return (NULL);
-for ((lll[i] = str[i])=! '\0')
-	i++;
-return (lll);
+twic = malloc(sizeof(char) * (cha + 1));
+
+	if (twic == NULL)
+		return (NULL);
+
+	for ((twic[i] = str[i]) != '\0')
+		i++;
+
+	return (twic);
 }
