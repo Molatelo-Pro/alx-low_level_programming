@@ -8,27 +8,48 @@
  * @str: character of string.
  * Return: Null if str is NULL
  */
+
 char *_strdup(char *str)
 {
-	char *twic;
-	unsigned int i, cha;
+char *twic;
+unsigned int i, cha;
 
-	i = 0;
-	cha = 0;
+i = 0;
+cha = 0;
 
-	if (str == NULL)
-		return (NULL);
+if (str == NULL)
+return (NULL);
 
-	for (str[cha])
-		cha++;
+while (str[cha] != '\0')
+{
+cha++;
+}
 
 twic = malloc(sizeof(char) * (cha + 1));
 
-	if (twic == NULL)
-		return (NULL);
+if (twic == NULL)
+return (NULL);
 
-	for ((twic[i] = str[i]) != '\0')
-		i++;
+while ((twic[i] = str[i]) != '\0')
+{
+i++;
+}
 
-	return (twic);
+return (twic);
+}
+
+int main(void)
+{
+char *original = "Hello, world!";
+char *copy = _strdup(original);
+
+if (copy != NULL)
+{
+printf("Original: %s\n", original);
+printf("Copy: %s\n", copy);
+
+free(copy);
+}
+
+return (0);
 }
