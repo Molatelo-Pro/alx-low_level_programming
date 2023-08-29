@@ -6,15 +6,19 @@
  * @name: Dog name.
  * @age: Dog name.
  * @owner: Dog owner.
- * Return: elements of the dog.
+ * Return: Always 0 (Success)
  */
 
 struct dog
+
 {
+
 char *name;
 float age;
 char *owner;
+
 };
+
 /**
  * dog_t - typedef struct dog.
  */
