@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - pointer to a newly allocated space in memory
- * @str: string which is a duplicate of the string str
+ * _strdup - Write a function that returns a pointer
+ *
+ * @str: returns a pointer to the duplicated string
  * Return: returns NULL if insufficient memory was available
  */
 
